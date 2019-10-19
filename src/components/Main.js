@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpg'
+import me from '../images/me.jpeg'
+import pic01 from '../images/pic02.jpg'
 import pic02 from '../images/pic02.jpg'
 import pic03 from '../images/pic03.jpg'
 
@@ -22,35 +23,33 @@ class Main extends React.Component {
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+          id="about"
+          className={`${this.props.article === 'about' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">About Me</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            <img src={me} alt="" style={{ width: '200px', marginLeft: '' }} />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            I am a motivated, forward-thinking, and growth-focused professional
+            with academic and project experience in developing cutting-edge
+            business solutions. I have experience and expertise in managing
+            projects and applications from conception to production, including
+            functional and technical requirements, development, testing and
+            documentation. <br />
+            <br />
+            Technologies I've worked with: <br />
+            <ul>
+              <li>Ruby on Rails, RSpec, Sidekiq, Webpacker, react_on_rails </li>
+              <li>Node.JS, Express JS framework </li>
+              <li>PostgreSQL, MongoDB, MySQL programming and administation</li>
+              <li>Javascript, ReactJS, Typescript, HTML, CSS</li>
+              <li>Bootstrap, Foundation, Sass</li>
+              <li>Git, CI, Linux, Docker, EC2, S3, Lambda</li>
+            </ul>
           </p>
           {close}
         </article>
@@ -85,24 +84,35 @@ class Main extends React.Component {
         </article>
 
         <article
-          id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
+          id="blog"
+          className={`${this.props.article === 'blog' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">About</h2>
+          <h2 className="major">Intro</h2>
           <span className="image main">
-            <img src={pic03} alt="" />
+            <img src={pic01} alt="" />
           </span>
           <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
+            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
+            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
+            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
+            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
+            By the way, check out my <a href="#work">awesome work</a>.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
+            libero eu nibh porttitor fermentum. Nullam venenatis erat id
+            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
+            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
+            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
+            lectus. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. In non lorem sit amet elit
+            placerat maximus. Pellentesque aliquam maximus risus, vel sed
+            vehicula.
           </p>
           {close}
         </article>
@@ -140,28 +150,38 @@ class Main extends React.Component {
           <ul className="icons">
             <li>
               <a
-                href="https://twitter.com/HuntaroSan"
+                href="https://twitter.com/Nursoltan_S"
                 className="icon fa-twitter"
+                target="__blank"
               >
                 <span className="label">Twitter</span>
               </a>
             </li>
             <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-instagram">
-                <span className="label">Instagram</span>
+              <a
+                href="https://github.com/nursoltan-s"
+                className="icon fa-github"
+                target="__blank"
+              >
+                <span className="label">GitHub</span>
               </a>
             </li>
             <li>
               <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
-                className="icon fa-github"
+                href="https://stackoverflow.com/users/10302548/nursoltan-saipolda"
+                className="icon fa-stack-overflow"
+                target="__blank"
               >
-                <span className="label">GitHub</span>
+                <span className="label">Stackoverflow</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=100010840962859"
+                className="icon fa-facebook"
+                target="__blank"
+              >
+                <span className="label">Facebook</span>
               </a>
             </li>
           </ul>
